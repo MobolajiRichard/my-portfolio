@@ -1,0 +1,59 @@
+/* .homepage{
+    flex: 0.8;
+} */
+.homepage{
+    height: 100%;
+    padding: 2%;
+    box-sizing: border-box;
+}
+.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.welcome-text{
+    flex: 0.7;
+}
+.animation{
+    flex: 0.3;
+}
+.name{
+    font-family: "Clicker Script", cursive;
+    font-size: 2rem;
+    color: #fc511e;
+}
+
+.title{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: #fc511e;
+}
+
+button{
+    height: 4em;
+    border-radius: 50px;
+    border: none;
+    background-color: #fc545e;
+    color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+button p {
+    font-size: 1.4em;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 600px) {
+    .animation{
+        display: none;
+    }
+    .welcome-text{
+        flex: 1;
+    }
+  }
