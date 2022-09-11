@@ -11,10 +11,10 @@ import {
 } from "@mui/lab";
 import { Typography } from "@mui/material";
 
-function Experience() {
+function Experience({theme}) {
   return (
     <div className="experience-container">
-      <header>
+      <header className={`header ${theme === 'red' ? 'red': theme === 'blue' ? 'blue': theme === 'green' ? 'green':theme === 'pink' ? 'pink':''}`}>
         <h1>Experience</h1>
       </header>
       <div className="experience">
@@ -22,8 +22,8 @@ function Experience() {
           <TimelineItem>
             <TimelineOppositeContent sx={{display:'none'}}/>
             <TimelineSeparator>
-              <TimelineDot sx={{backgroundColor:'#fc511e'}} />
-              <TimelineConnector sx={{backgroundColor:'#fc511e'}}/>
+              <TimelineDot sx={{backgroundColor:theme === 'red' ? '#ec1839': theme === 'blue' ? '#1854b4': theme === 'green' ? '#37b182':theme === 'pink' ? '#f021b2':'#fc511e'}} />
+              <TimelineConnector sx={{backgroundColor:theme === 'red' ? '#ec1839': theme === 'blue' ? '#1854b4': theme === 'green' ? '#37b182':theme === 'pink' ? '#f021b2':'#fc511e'}}/>
             </TimelineSeparator>
             <TimelineContent>
               <Typography sx={{fontWeight:550}} >
@@ -43,8 +43,8 @@ function Experience() {
           <TimelineItem>
           <TimelineOppositeContent sx={{display:'none'}}/>
             <TimelineSeparator>
-              <TimelineDot sx={{backgroundColor:'#fc511e'}} />
-              <TimelineConnector sx={{backgroundColor:'#fc511e'}}/>
+              <TimelineDot sx={{backgroundColor:theme === 'red' ? '#ec1839': theme === 'blue' ? '#1854b4': theme === 'green' ? '#37b182':theme === 'pink' ? '#f021b2':'#fc511e'}} />
+              <TimelineConnector sx={{backgroundColor:theme === 'red' ? '#ec1839': theme === 'blue' ? '#1854b4': theme === 'green' ? '#37b182':theme === 'pink' ? '#f021b2':'#fc511e'}}/>
             </TimelineSeparator>
             <TimelineContent>
               <Typography sx={{fontWeight:550}}>
@@ -61,8 +61,8 @@ function Experience() {
           <TimelineItem>
           <TimelineOppositeContent sx={{display:'none'}}/>
             <TimelineSeparator>
-              <TimelineDot sx={{backgroundColor:'#fc511e'}}/>
-              <TimelineConnector sx={{backgroundColor:'#fc511e'}}/>
+              <TimelineDot sx={{backgroundColor:theme === 'red' ? '#ec1839': theme === 'blue' ? '#1854b4': theme === 'green' ? '#37b182':theme === 'pink' ? '#f021b2':'#fc511e'}}/>
+              <TimelineConnector sx={{backgroundColor:theme === 'red' ? '#ec1839': theme === 'blue' ? '#1854b4': theme === 'green' ? '#37b182':theme === 'pink' ? '#f021b2':'#fc511e'}}/>
             </TimelineSeparator>
             <TimelineContent>
               <Typography sx={{fontWeight:550}}>NDUO EDUO HIGH SCHOOL, EKET, AKWA-IBOM, NIGERIA,  2021-2022</Typography>

@@ -1,11 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+html {
+  --color-orange: #fc511e;
+  --color-red: #ec1839;
+  --color-blue:  #1854b4;
+  --color-green: #37b182;
+  --color-pink: #f021b2;
+}
 .app{
   margin: 0;
   padding: 0;
   display: flex;
+  height: 100vh;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
   position: relative;
+  overflow: hidden;
+}
+
+.style-switcher{
+  position: fixed;
+  right: 0;
+  top: 60px;
+ width:200px;
+  border-radius: 5px;
+  /* border: 1px solid saddlebrown; */
+  transition: all 0.3s ease;
+  z-index: 100;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+
+}
+
+.show-setting{
+  transform: translateX(100%);
+}
+
+.sty{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 100%;
+  margin-right: 25px;
+  cursor: pointer;
+  background: rgb(226, 223, 223);
+  border: 1px solid black;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+.colors{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.style-switcher .colors span{
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.color-1{
+  background-color: #ec1839;
+}
+
+.color-2{
+  background-color: #fa5b0f;
+}
+
+.color-3{
+  background-color: #37b182;
+}
+
+.color-4{
+  background-color: #1854b4;
+}
+
+.color-5{
+  background-color: #f021b2;
 }
 
 .app-main{
@@ -13,15 +93,37 @@
   background-color: #f2f2fc;
   display: flex;
   flex-direction: column;
-  overflow: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
-
+.dark{
+  background-color: rgb(37, 34, 34);
+  color: white;
+  }
+.darkmode{
+  position: fixed;
+  right: 15px;
+  top: 10px;
+}
 .menu{
   display: none;
   position: fixed;
-  top: 0;
+  top: 15px;
 
 }
+.rotate {
+  animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 @media (max-width: 600px) {
   .app-main {
     flex: 1;

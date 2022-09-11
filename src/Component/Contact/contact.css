@@ -4,22 +4,39 @@
     width: 100%;
     /* overflow: auto; */
 }
-header h1{
-    font-family: 'Times New Roman', Times, serif;
+.header h1{
+    font-family: cursive;
     position: relative;
     margin-bottom: 2em;
 }
-header h1::before{
+.header h1::before{
     content: '';
     height: 4px;
     width: 50px;
-    background-color: #fc511e;
+    background-color: var(--color-orange);
     position: absolute;
     top: 100%;
     left: 0;
 }
 
-header h1::after{
+.red h1::before{
+    background-color: var(--color-red);
+
+}
+.blue h1::before{
+    background-color: var(--color-blue);
+    
+}
+.green h1::before{
+    background-color: var(--color-green);
+    
+}
+.pink h1::before{
+    background-color: var(--color-pink);
+    
+}
+
+.header h1::after{
     content: '';
     height: 4px;
     width: 25px;
@@ -28,6 +45,23 @@ header h1::after{
     top: 100%;
     left: 0;
     margin-top: 8px;
+}
+
+.red h1::after{
+    background-color: var(--color-red);
+
+}
+.blue h1::after{
+    background-color: var(--color-blue);
+    
+}
+.green h1::after{
+    background-color: var(--color-green);
+    
+}
+.pink h1::after{
+    background-color: var(--color-pink);
+    
 }
 .contact-bar{
     display: flex;
@@ -74,7 +108,6 @@ header h1::after{
 .form-field-area{
     height: 140px;
     width: 100%;
-    border-radius: 30px;
     text-indent: 10px;
     border: none;
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);

@@ -29,3 +29,23 @@ header h1::after{
     left: 0;
     margin-top: 8px;
 }
+
+.visit-link{
+    text-decoration: none;
+    color: var(--color-orange);
+}
+
+.red{
+    color: var(--color-red);
+}
+
+.blue{
+    color: var(--color-blue)
+}
+
+.green{
+    color: var(--color-green);
+}
+.pink{
+    color: var(--color-pink);
+}

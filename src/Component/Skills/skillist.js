@@ -55,6 +55,14 @@ export const learning = [
         title: "REACT NATIVE"
     },
     {
+        image: "images/next.png",
+        title: "NEXT"
+    },
+    {
+        image: "images/vue.png",
+        title: "VUE"
+    },
+    {
         image: "images/node.png",
         title: "NODE JS"
     },
@@ -65,13 +73,5 @@ export const learning = [
     {
         image: "images/mongodb.png",
         title: "MONGO DB"
-    },
-    {
-        image: "images/python.png",
-        title: "PYTHON"
-    },
-    {
-        image: "images/vue.png",
-        title: "VUE"
     },
 ]
