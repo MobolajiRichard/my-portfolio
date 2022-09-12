@@ -116,7 +116,7 @@ function App() {
       {toggleSidebar && <Sidebar darkmode={darkmode} theme={theme} handleSidebar={()=> setToggleSidebar(prev => !prev)}/>}
       <div className={`app-main ${darkmode? 'dark' : ''}`} onScroll={handleScroll}>
         <div className='menu'>
-        <MenuOutlined onClick={()=> setToggleSidebar(prev => !prev)} />
+        <MenuOutlined  onClick={()=> setToggleSidebar(prev => !prev)} />
         </div>
         <div className='darkmode'>
         <MaterialUISwitch defaultChecked checked={darkmode} onChange={handleDarkmode}/>

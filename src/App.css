@@ -104,10 +104,12 @@ html {
   position: fixed;
   right: 15px;
   top: 10px;
+  z-index: 200;
 }
 .menu{
   display: none;
   position: fixed;
+  z-index: 200;
   top: 15px;
 
 }
