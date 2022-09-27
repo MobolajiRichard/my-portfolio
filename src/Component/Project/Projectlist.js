@@ -22,7 +22,7 @@ export const projects =[
         title: "WHATSAPP CLONE",
         description: "This is a chat application that mimics the whatsapp group features but with a little twists",
         skills:"REACT - REACT-ROUTER - MATERIAL UI - FIREBASE",
-        url: 'https://mmessageme.netlify.app'
+        url: 'https://chat-clone-ab9da.web.app/'
     },
     {
         image: "images/budgettracker.png",
@@ -36,6 +36,6 @@ export const projects =[
         title: "babyME",
         description: "This is an e-commerce that deals with selling of baby products",
         skills:"REACT - REACT-ROUTER-DOM - MATERIAL UI - REDUX TOOLKIT",
-        url: 'https://chat-clone-ab9da.web.app/'
+        url: 'https://babymee.netlify.app'
     }
 ]
