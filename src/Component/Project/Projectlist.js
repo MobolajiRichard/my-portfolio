@@ -37,5 +37,19 @@ export const projects =[
         description: "This is an e-commerce that deals with selling of baby products",
         skills:"REACT - REACT-ROUTER-DOM - MATERIAL UI - REDUX TOOLKIT",
         url: 'https://babymee.netlify.app'
-    }
+    },
+    {
+        image: "images/artisto.png",
+        title: "ARTISTO",
+        description: "This website displays different type of arts by different artist - An OnliNe museum",
+        skills:"REACT-TPESCRIPT - REACT-ROUTER-DOM - REDUX TOOLKIT - ART-INSTITUTE API",
+        url: 'https://m-art-institute.netlify.app/'
+    },
+    {
+        image: "images/google-clone.png",
+        title: "GOOGLE - CLONE",
+        description: "An exact replica of google with it's search features and paginations",
+        skills:"NEXTJS - TAILWIND - GOOGLE API",
+        url: 'https://google-clone-ruddy-zeta.vercel.app/'
+    },
 ]
