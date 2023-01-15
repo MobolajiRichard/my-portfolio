@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { isMobile } from 'react-device-detect';
 import Homepage from './Component/HomePage/Homepage';
 import Sidebar from './Component/Sidebar/Sidebar';
 import Skills from './Component/Skills/Skills';
