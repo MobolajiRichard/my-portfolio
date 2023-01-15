@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { isMobile } from 'react-device-detect';
 import Homepage from './Component/HomePage/Homepage';
 import Sidebar from './Component/Sidebar/Sidebar';
 import Skills from './Component/Skills/Skills';
@@ -60,10 +61,13 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 }));
 
 function App() {
-  const [toggleSidebar, setToggleSidebar] = useState(true)
+  const [toggleSidebar, setToggleSidebar] = useState(false)
   const [darkmode, setDarkmode] = useState(false)
   const [setting, showSetting] = useState(false)
   const [theme, setTheme] = useState('')
+
+  
+ 
 
   useEffect(()=>{
     if (window.screen.width > 600){
@@ -97,6 +101,11 @@ function App() {
  window.onresize = detectWindowSize;
 
 
+  // if(isMobile){
+  //   setToggleSidebar(false)
+  //   console.log('mobile')
+  // }
+  
   const handleDarkmode = () => {
     setDarkmode(prev => !prev)
   }
@@ -109,7 +118,6 @@ function App() {
   }
 
 
-  
 
   return (
     <div className="app" >

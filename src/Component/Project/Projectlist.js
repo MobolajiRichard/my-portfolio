@@ -52,4 +52,18 @@ export const projects =[
         skills:"NEXTJS - TAILWIND - GOOGLE API",
         url: 'https://google-clone-ruddy-zeta.vercel.app/'
     },
+    {
+        image: "images/imagegenerator.png",
+        title: "LERNEN",
+        description: "This is a landing page for a language learning institution baed in Nigeria",
+        skills:"NEXTJS - TAILWIND",
+        url: 'https://lernenplatz.netlify.app/'
+    },
+    {
+        image: "images/lerneb-white.png",
+        title: "IMAGE GENERATOR",
+        description: "This is an images generator application, you can generate images by text.",
+        skills:"VUEJS - TAILWIND - OPEN AI API",
+        url: 'https://aiimagegenerator.netlify.app/'
+    },
 ]
